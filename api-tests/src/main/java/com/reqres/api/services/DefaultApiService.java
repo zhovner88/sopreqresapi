@@ -36,4 +36,14 @@ public class DefaultApiService extends BaseApiService {
                 .get("api/users/" + userId)
                 .then());
     }
+
+    public AssertableResponse getUsersFromPage(int page) {
+        log.info("Get users - page: {}", page);
+
+        return new AssertableResponse(setUpRequest()
+                .queryParam("page", page)
+                .when()
+                .get("api/users")
+                .then());
+    }
 }
