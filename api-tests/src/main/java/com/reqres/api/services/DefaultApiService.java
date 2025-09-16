@@ -46,4 +46,14 @@ public class DefaultApiService extends BaseApiService {
                 .get("api/users")
                 .then());
     }
+
+    public AssertableResponse getUsersWithDelay(int delaySeconds) {
+        log.info("Get users with delay: {} seconds", delaySeconds);
+
+        return new AssertableResponse(setUpRequest()
+                .queryParam("delay", delaySeconds)
+                .when()
+                .get("api/users")
+                .then());
+    }
 }

@@ -3,6 +3,7 @@ package com.reqres.tests;
 import com.reqres.api.model.LoginRequest;
 import com.reqres.api.model.LoginResponse;
 import com.reqres.api.model.LoginResponseError;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static com.reqres.api.conditions.Conditions.bodyField;
@@ -47,22 +48,22 @@ public class LoginTests extends BaseApiTest {
                 .as(LoginResponseError.class);
     }
 
-    @Test
-    void shouldFailLoginWithMissingEmail() {
-        LoginRequest request = new LoginRequest()
-                .setPassword("cityslicka");
-
-        defaultApiService.login(request)
-                .shouldHave(statusCode(400))
-                .shouldHave(bodyField("error", equalTo("Missing email or username")))
-                .as(LoginResponseError.class);
+    @DataProvider(name = "invalidCredentials")
+    public Object[][] invalidCredentials() {
+        return new Object[][] {
+                {null, "cityslicka"},
+                {"", ""},
+                {"", "cityslicka"},
+                {null, ""},
+                {null, null}
+        };
     }
 
-    @Test
-    void shouldFailLoginWithEmptyCredentials() {
+    @Test(dataProvider = "invalidCredentials")
+    void shouldFailLoginWithInvalidCredentials(String email, String password) {
         LoginRequest request = new LoginRequest()
-                .setEmail("")
-                .setPassword("");
+                .setEmail(email)
+                .setPassword(password);
 
         defaultApiService.login(request)
                 .shouldHave(statusCode(400))
