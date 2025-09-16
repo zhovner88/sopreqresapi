@@ -27,4 +27,13 @@ public class DefaultApiService extends BaseApiService {
                 .post("api/login")
                 .then());
     }
+
+    public AssertableResponse getUserById(int userId) {
+        log.info("Get user by ID: {}", userId);
+
+        return new AssertableResponse(setUpRequest()
+                .when()
+                .get("api/users/" + userId)
+                .then());
+    }
 }
