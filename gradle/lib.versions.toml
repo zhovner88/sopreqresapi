@@ -1,0 +1,46 @@
+[versions]
+# --- TestNG ---
+testng = "7.8.0"
+rest-assured = "5.5.0"
+allure = "2.11.2"
+jacksonDatabind = "2.18.0"
+logback = "1.5.18"
+slf4j = "2.0.16"
+javafaker = "1.0.2"
+allure-rest-assured = "2.25.0"
+
+
+[libraries]
+# https://mvnrepository.com/artifact/org.testng/testng
+# TestNG testing framework
+testng = { module = "org.testng:testng", version.ref = "testng" }
+
+# https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+# Easy objecst serialization
+jacksonDatabind = {module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jacksonDatabind"}
+# https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+# Jackson annotations
+jacksonAnnotations = {module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jacksonDatabind"}
+
+# LOGGING
+# https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+# https://mvnrepository.com/artifact/ch.qos.logback/logback-core
+logback-core = { module = "ch.qos.logback:logback-core", version.ref = "logback" }
+# https://mvnrepository.com/artifact/org.slf4j/slf4j-ext
+slf4j-ext = { module = "org.slf4j:slf4j-ext", version.ref = "slf4j" }
+
+# https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+# Java DSL for easy testing of REST services
+restAssured = { module = "io.rest-assured:rest-assured", version.ref = "rest-assured" }
+
+# https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+# Java library for generating fake data
+javafaker = { module = "com.github.javafaker:javafaker", version.ref = "javafaker" }
+
+# https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured
+# Allure RestAssured integration
+allureRestAssured = { module = "io.qameta.allure:allure-rest-assured", version.ref = "allure-rest-assured" }
+
+[plugins]
+allure = { id = "io.qameta.allure", version.ref = "allure" }
