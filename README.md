@@ -71,11 +71,6 @@ Test results and detailed logging are available in the console during test execu
 
 ## Configuration
 
-### API Configuration
-- **Base URL**: `https://reqres.in/`
-- **Required Header**: `x-api-key: reqres-free-v1`
-- **Content Type**: `application/json`
-
 ### Test Configuration
 - Parallel execution enabled
 - Request/response logging
@@ -84,14 +79,14 @@ Test results and detailed logging are available in the console during test execu
 
 ## Key Features
 
-- **Template Method Pattern** for request setup
-- **Generic user search** across all pages with field selectors
-- **Fluent API** for readable test assertions
-- **Parametrized tests** with TestNG DataProvider
-- **Clean separation** of concerns (DTOs, Services, Tests)
-- **Comprehensive validation** including timing, data integrity, and edge cases
+- Template Method Pattern for request setup
+- Generic user search across all pages with field selectors
+- Fluent API for readable test assertions
+- Parametrized tests with TestNG DataProvider
+- Separation of concerns (DTOs, Services, Tests)
+- Validation including timing, data integrity, and edge cases
 
-## Authentication Pattern (Theoretical)
+## Authentication (Theory)
 
 If the token returned was meant to be used for authentication, structure tests to:
 
@@ -108,7 +103,3 @@ If the token returned was meant to be used for authentication, structure tests t
 - **Handle token expiration or reuse**
   - Introduce UpdateAuthToken() method that updates Authentication token with valid, not expired token
   - Introduce method for checking for token expiration and refreshing it automatically (if 401 - refresh)
-
-## Notes
-
-All API requests require the `x-api-key` header with value `reqres-free-v1`. The framework automatically includes this header through the `BaseApiService` class.
