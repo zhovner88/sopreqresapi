@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.reqres.tests.DelayTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.reqres.tests.DelayTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.reqres.tests.html">com.reqres.tests</a> &gt; DelayTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">24.257s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldHandleNegativeDelay</td>
+<td class="success">2.524s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldHandleZeroDelayCorrectly</td>
+<td class="success">2.529s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldMaintainDataIntegrityWithDelay</td>
+<td class="success">4.608s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRespectDelayTiming[0](1)</td>
+<td class="success">2.586s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRespectDelayTiming[1](3)</td>
+<td class="success">3.160s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRespectDelayTiming[2](5)</td>
+<td class="success">5.216s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnCorrectResponseStructureWithDelay</td>
+<td class="success">3.634s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:34:04.782 [TestNG-test=Gradle test-4] INFO  DefaultApiService - Get users with delay: 1 seconds
+11:34:04.782 [TestNG-test=Gradle test-2] INFO  DefaultApiService - Get users with delay: 0 seconds
+11:34:04.782 [TestNG-test=Gradle test-3] INFO  DefaultApiService - Get users - page: 1
+11:34:04.782 [TestNG-test=Gradle test-5] INFO  DefaultApiService - Get users with delay: 2 seconds
+11:34:04.782 [TestNG-test=Gradle test-1] INFO  DefaultApiService - Get users with delay: -1 seconds
+Request method:	GET
+Request URI:	https://reqres.in/api/users?page=1
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	page=1
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=2
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=-1
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=-1
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=0
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=0
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=1
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=1
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:06 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 90
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101646&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101646&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 998c4e6f-671f-0926-5b16-535fe6381134
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b187e400a41-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4912&amp;min_rtt=3872&amp;rtt_var=1724&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3104&amp;recv_bytes=823&amp;delivery_rate=794701&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=575d919274b3862c&amp;ts=159&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:06 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 87
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101646&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101646&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 87fe5a29-47c2-c305-dc1a-7e96575ebb75
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b187f8211c5-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=5096&amp;min_rtt=4896&amp;rtt_var=1979&amp;sent=7&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3103&amp;recv_bytes=824&amp;delivery_rate=857843&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=d2935c1dd1de4cef&amp;ts=212&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:06 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 96
+Ratelimit-Reset: 48
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=n2KF%2Bg5kQdKTwHHc1%2FdSQyPkvjcXlbQcQnuJw2DaI28%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758057516&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=n2KF%2Bg5kQdKTwHHc1%2FdSQyPkvjcXlbQcQnuJw2DaI28%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758057516&quot;
+Vary: Origin, Accept-Encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 84e8c06f-0959-92c8-6c89-60b9799e7415
+X-Xss-Protection: 1; mode=block
+Age: 1982
+Cache-Control: max-age=14400
+cf-cache-status: HIT
+Server: cloudflare
+CF-RAY: 98079b1879544e58-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4998&amp;min_rtt=4624&amp;rtt_var=1570&amp;sent=7&amp;recv=8&amp;lost=0&amp;retrans=0&amp;sent_bytes=3103&amp;recv_bytes=822&amp;delivery_rate=787844&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=6b63ff1f8b9ab5c1&amp;ts=90&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+11:34:06.332 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Status code is 200 (9ms)
+11:34:06.334 [TestNG-test=Gradle test-2] INFO  AssertableResponse - PASSED: Status code is 200 (11ms)
+11:34:06.337 [TestNG-test=Gradle test-3] INFO  AssertableResponse - PASSED: Status code is 200 (15ms)
+11:34:06.338 [TestNG-test=Gradle test-3] INFO  AssertableResponse - Mapping response to UsersResponse DTO
+11:34:07.147 [TestNG-test=Gradle test-3] INFO  DefaultApiService - Get users with delay: 2 seconds
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=2
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+11:34:07.277 [TestNG-test=Gradle test-2] INFO  AssertableResponse - PASSED: Body field 'data' should match not null (942ms)
+11:34:07.277 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Body field 'data' should match not null (942ms)
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 76
+Ratelimit-Reset: 59
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101646&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101646&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 5ae958c6-7d5a-8edd-4e47-470db65a2317
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b187c3dc6a0-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=5988&amp;min_rtt=5577&amp;rtt_var=2385&amp;sent=7&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3103&amp;recv_bytes=823&amp;delivery_rate=753093&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=81c1e3d1fd41bf75&amp;ts=1208&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+11:34:07.311 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Status code is 200 (1ms)
+11:34:07.324 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Body field 'data' should match not null (13ms)
+11:34:07.333 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Body field 'data' should match not an empty collection (7ms)
+11:34:07.338 [TestNG-test=Gradle test-4] INFO  DefaultApiService - Get users with delay: 3 seconds
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=3
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=3
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:08 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 64
+Ratelimit-Reset: 58
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101646&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=3p6DBHhsoK5ibtm39yDJFyPZcQYVLxHT39cftglWoLM%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101646&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 5cefcc3b-ad68-ead5-555e-66321d83538e
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b187a27a106-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4779&amp;min_rtt=3652&amp;rtt_var=1655&amp;sent=7&amp;recv=8&amp;lost=0&amp;retrans=0&amp;sent_bytes=3105&amp;recv_bytes=823&amp;delivery_rate=858193&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=0ba2e5d1fdb69e4a&amp;ts=2215&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+11:34:08.339 [TestNG-test=Gradle test-5] INFO  AssertableResponse - PASSED: Status code is 200 (0ms)
+11:34:08.355 [TestNG-test=Gradle test-5] INFO  AssertableResponse - PASSED: Body field 'page' should match not null (15ms)
+11:34:08.363 [TestNG-test=Gradle test-5] INFO  AssertableResponse - PASSED: Body field 'per_page' should match not null (8ms)
+11:34:08.370 [TestNG-test=Gradle test-5] INFO  AssertableResponse - PASSED: Body field 'total' should match not null (6ms)
+11:34:08.376 [TestNG-test=Gradle test-5] INFO  AssertableResponse - PASSED: Body field 'total_pages' should match not null (6ms)
+11:34:08.383 [TestNG-test=Gradle test-5] INFO  AssertableResponse - PASSED: Body field 'data' should match not null (6ms)
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:09 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 63
+Ratelimit-Reset: 57
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101647&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101647&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 0f5f32b9-94ee-f536-4ccf-e53f218a03bc
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b1ee9c6f9e2-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4078&amp;min_rtt=4077&amp;rtt_var=1531&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3103&amp;recv_bytes=823&amp;delivery_rate=1027900&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=1d38903d4888a3f8&amp;ts=2076&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+11:34:09.353 [TestNG-test=Gradle test-3] INFO  AssertableResponse - PASSED: Status code is 200 (0ms)
+11:34:09.354 [TestNG-test=Gradle test-3] INFO  AssertableResponse - Mapping response to UsersResponse DTO
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:10 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 62
+Ratelimit-Reset: 56
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101647&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101647&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 6955e2a1-8aed-c136-13bf-97929b721805
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b201cb5b6a1-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4252&amp;min_rtt=4215&amp;rtt_var=1607&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3103&amp;recv_bytes=823&amp;delivery_rate=996441&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=1621591a2b6dbe95&amp;ts=3065&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+11:34:10.477 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Status code is 200 (0ms)
+11:34:10.491 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Body field 'data' should match not null (13ms)
+11:34:10.497 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Body field 'data' should match not an empty collection (6ms)
+11:34:10.500 [TestNG-test=Gradle test-4] INFO  DefaultApiService - Get users with delay: 5 seconds
+Request method:	GET
+Request URI:	https://reqres.in/api/users?delay=5
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	delay=5
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;41e-bY3U72nulxuwNd/TmihMEHjLmek&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 60
+Ratelimit-Reset: 51
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=1W6iZP2QxDT8%2BZ%2By6YUClM6XwWKu%2BR2xWCeKz0GZcyk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101650&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=1W6iZP2QxDT8%2BZ%2By6YUClM6XwWKu%2BR2xWCeKz0GZcyk%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101650&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 7a4aa62d-de02-264d-3059-df7c4e0ca3bd
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+CF-RAY: 98079b33c872a455-ARN
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4277&amp;min_rtt=3976&amp;rtt_var=1706&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3104&amp;recv_bytes=823&amp;delivery_rate=1056338&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=824dc4a193861014&amp;ts=5060&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Bluth&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Janet&quot;,
+            &quot;last_name&quot;: &quot;Weaver&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Emma&quot;,
+            &quot;last_name&quot;: &quot;Wong&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Eve&quot;,
+            &quot;last_name&quot;: &quot;Holt&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/4-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Charles&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;email&quot;: &quot;tracey.ramos@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tracey&quot;,
+            &quot;last_name&quot;: &quot;Ramos&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/6-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+11:34:15.697 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Status code is 200 (0ms)
+11:34:15.706 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Body field 'data' should match not null (9ms)
+11:34:15.713 [TestNG-test=Gradle test-4] INFO  AssertableResponse - PASSED: Body field 'data' should match not an empty collection (6ms)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at Sep 17, 2025, 11:34:15 AM</p>
+</div>
+</div>
+</body>
+</html>

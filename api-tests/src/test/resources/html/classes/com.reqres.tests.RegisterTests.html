@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.reqres.tests.RegisterTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.reqres.tests.RegisterTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.reqres.tests.html">com.reqres.tests</a> &gt; RegisterTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.375s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldFailRegisterWithInvalidData[0](eve.holt@reqres.in, null, Missing password)</td>
+<td class="success">3.083s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldFailRegisterWithInvalidData[1](, cityslicka, Missing email or username)</td>
+<td class="success">0.112s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldFailRegisterWithInvalidData[2](invalid@email.com, cityslicka, Note: Only defined users succeed registration)</td>
+<td class="success">0.089s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRegisterUserSuccessfully</td>
+<td class="success">3.091s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:34:04.659 [TestNG-test=Gradle test-2] INFO  DefaultApiService - Register user with email: eve.holt@reqres.in
+11:34:04.659 [TestNG-test=Gradle test-1] INFO  DefaultApiService - Register user with email: eve.holt@reqres.in
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;cityslicka&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: null
+}
+HTTP/1.1 200 OK
+Date: Wed, 17 Sep 2025 09:34:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+CF-RAY: 98079b1e59adb79a-ARN
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 82
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101647&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101647&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: fa5f3f36-ba21-2293-4f11-a0dfb202f039
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=5038&amp;min_rtt=3972&amp;rtt_var=1791&amp;sent=7&amp;recv=8&amp;lost=0&amp;retrans=0&amp;sent_bytes=3104&amp;recv_bytes=893&amp;delivery_rate=883838&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=e0e22f29eee9dbb4&amp;ts=124&amp;x=0&quot;
+
+{
+    &quot;id&quot;: 4,
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 17 Sep 2025 09:34:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+CF-RAY: 98079b1e5dc15864-ARN
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 80
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101647&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101647&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: a40bc69c-d86e-28e7-d883-445b8fdddde7
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=5267&amp;min_rtt=4027&amp;rtt_var=2396&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3105&amp;recv_bytes=885&amp;delivery_rate=1042960&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=43dbf24e578f2fbd&amp;ts=124&amp;x=0&quot;
+
+{
+    &quot;error&quot;: &quot;Missing password&quot;
+}
+11:34:07.261 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Status code is 400 (21ms)
+11:34:07.261 [TestNG-test=Gradle test-2] INFO  AssertableResponse - PASSED: Status code is 200 (22ms)
+11:34:07.682 [TestNG-test=Gradle test-2] INFO  AssertableResponse - PASSED: Body field 'id' should match not null (419ms)
+11:34:07.682 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Body field 'error' should match &quot;Missing password&quot; (419ms)
+11:34:07.683 [TestNG-test=Gradle test-1] INFO  AssertableResponse - Mapping response to RegisterResponseError DTO
+11:34:07.689 [TestNG-test=Gradle test-2] INFO  AssertableResponse - PASSED: Body field 'token' should match not null (6ms)
+11:34:07.690 [TestNG-test=Gradle test-2] INFO  AssertableResponse - Mapping response to RegisterResponse DTO
+11:34:07.768 [TestNG-test=Gradle test-1] INFO  DefaultApiService - Register user with email: 
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;&quot;,
+    &quot;password&quot;: &quot;cityslicka&quot;
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 17 Sep 2025 09:34:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 37
+Connection: keep-alive
+CF-RAY: 98079b22dc2b2d8c-ARN
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;25-Ik70kof1lbc973ShN5FoVPxYn7A&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 67
+Ratelimit-Reset: 59
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101647&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101647&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 6f6e3ff5-73e6-fb61-9570-55bc5991d1aa
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4188&amp;min_rtt=4178&amp;rtt_var=1587&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3105&amp;recv_bytes=875&amp;delivery_rate=985684&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=c468f56a4335b05d&amp;ts=71&amp;x=0&quot;
+
+{
+    &quot;error&quot;: &quot;Missing email or username&quot;
+}
+11:34:07.873 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Status code is 400 (0ms)
+11:34:07.878 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Body field 'error' should match &quot;Missing email or username&quot; (5ms)
+11:34:07.878 [TestNG-test=Gradle test-1] INFO  AssertableResponse - Mapping response to RegisterResponseError DTO
+11:34:07.881 [TestNG-test=Gradle test-1] INFO  DefaultApiService - Register user with email: invalid@email.com
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;invalid@email.com&quot;,
+    &quot;password&quot;: &quot;cityslicka&quot;
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 17 Sep 2025 09:34:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+CF-RAY: 98079b236da649b7-ARN
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;39-6jrJxn+7f+pQUhbPgNMst7tagpA&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 65
+Ratelimit-Reset: 59
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758101647&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A5jBD5QHgDSGkBLsxyfykOA4UOobxOtRgmnCcJ7GzX8%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758101647&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 9439dba5-4909-1312-994f-f0d4cffdb5e7
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=4244&amp;min_rtt=4221&amp;rtt_var=1630&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=3103&amp;recv_bytes=892&amp;delivery_rate=951949&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=c497f21b66cd25f5&amp;ts=64&amp;x=0&quot;
+
+{
+    &quot;error&quot;: &quot;Note: Only defined users succeed registration&quot;
+}
+11:34:07.965 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Status code is 400 (0ms)
+11:34:07.969 [TestNG-test=Gradle test-1] INFO  AssertableResponse - PASSED: Body field 'error' should match &quot;Note: Only defined users succeed registration&quot; (4ms)
+11:34:07.969 [TestNG-test=Gradle test-1] INFO  AssertableResponse - Mapping response to RegisterResponseError DTO
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14</a> at Sep 17, 2025, 11:34:15 AM</p>
+</div>
+</div>
+</body>
+</html>

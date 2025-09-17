@@ -53,6 +53,8 @@ Import the project as a Gradle project in your IDE (IntelliJ IDEA, VSCode) and r
 
 ### HTML Reports
 - **Gradle HTML Report**: `api-tests/build/reports/tests/test/index.html`
+- api-tests/src/test/resources/html/index.html - generated report
+![results_html.png](api-tests/src/test/resources/results_html.png)
 - **Allure Report**: Generate with `./gradlew allureReport` then open `api-tests/build/reports/allure-report/index.html`
 
 ### Console Output
