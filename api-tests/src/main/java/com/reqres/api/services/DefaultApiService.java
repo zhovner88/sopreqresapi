@@ -3,7 +3,17 @@ package com.reqres.api.services;
 import com.reqres.api.AssertableResponse;
 import com.reqres.api.model.LoginRequest;
 import com.reqres.api.model.RegisterRequest;
+import com.reqres.api.model.User;
+import com.reqres.api.model.UserResponse;
+import com.reqres.api.model.UsersResponse;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.function.Function;
+
+import static com.reqres.api.conditions.Conditions.statusCode;
 
 @Slf4j
 public class DefaultApiService extends BaseApiService {
@@ -55,5 +65,55 @@ public class DefaultApiService extends BaseApiService {
                 .when()
                 .get("api/users")
                 .then());
+    }
+
+    private <T> UserResponse findUserByField(Function<User, T> fieldSelector, T searchValue) {
+        log.info("Finding user by field value: {}", searchValue);
+
+        int usersPerPage = getUsersFromPage(1)
+                .shouldHave(statusCode(200))
+                .as(UsersResponse.class)
+                .getPerPage();
+
+        List<User> allUsers = new ArrayList<>();
+        int page = 1;
+
+        while (true) {
+            UsersResponse response = getUsersFromPage(page)
+                    .shouldHave(statusCode(200))
+                    .as(UsersResponse.class);
+
+            allUsers.addAll(response.getData());
+
+            if (response.getData().size() < usersPerPage) {
+                break;
+            }
+            page++;
+        }
+
+        User foundUser = allUsers.stream()
+                .filter(user -> Objects.equals(fieldSelector.apply(user), searchValue))
+                .findFirst()
+                .orElseThrow(() -> new AssertionError("User not found with field value: " + searchValue));
+
+        return getUserById(foundUser.getId())
+                .shouldHave(statusCode(200))
+                .as(UserResponse.class);
+    }
+
+    public UserResponse findUserByEmail(String email) {
+        return findUserByField(User::getEmail, email);
+    }
+
+    public UserResponse findUserByFirstName(String firstName) {
+        return findUserByField(User::getFirstName, firstName);
+    }
+
+    public UserResponse findUserByLastName(String lastName) {
+        return findUserByField(User::getLastName, lastName);
+    }
+
+    public UserResponse findUserById(Integer id) {
+        return findUserByField(User::getId, id);
     }
 }
